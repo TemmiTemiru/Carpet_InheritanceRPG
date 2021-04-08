@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".monsterSelect">
+
+    <TextView
+        android:id="@+id/txtMonsterSelect"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="MONSTER SELECT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/btnElectro"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Electro"
+        android:textColor="#FFB31A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonsterSelect" />
+
+    <Button
+        android:id="@+id/btnFire"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Fire"
+        android:textColor="#FF6246"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnElectro"
+        app:layout_constraintStart_toStartOf="@+id/btnElectro"
+        app:layout_constraintTop_toBottomOf="@+id/btnElectro" />
+
+    <Button
+        android:id="@+id/btnIce"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Ice"
+        android:textColor="#008E8E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnFire"
+        app:layout_constraintStart_toStartOf="@+id/btnFire"
+        app:layout_constraintTop_toBottomOf="@+id/btnFire" />
+
+    <Button
+        android:id="@+id/btnRock"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Rock"
+        android:textColor="#6C503C"
+        android:textColorHighlight="#E17B38"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnIce"
+        app:layout_constraintStart_toStartOf="@+id/btnIce"
+        app:layout_constraintTop_toBottomOf="@+id/btnIce" />
+
+    <Button
+        android:id="@+id/btnWater"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Water"
+        android:textColor="#5B04D5"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRock"
+        app:layout_constraintStart_toStartOf="@+id/btnRock"
+        app:layout_constraintTop_toBottomOf="@+id/btnRock" />
+
+    <Button
+        android:id="@+id/btnBackMons"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsterSelect"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWater"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

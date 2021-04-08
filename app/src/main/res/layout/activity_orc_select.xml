@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".orcSelect">
+
+    <TextView
+        android:id="@+id/txtOrcSelect"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="ORC SELECT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/btnBarbarian"
+        android:layout_width="134dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Barbarian"
+        android:textColor="#007755"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrcSelect" />
+
+    <Button
+        android:id="@+id/btnPaladin"
+        android:layout_width="132dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Paladin"
+        android:textColor="#007755"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnBarbarian"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBarbarian"
+        app:layout_constraintTop_toBottomOf="@+id/btnBarbarian"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBackOrc"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrcSelect"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPaladin"
+        app:layout_constraintVertical_bias="0.539" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

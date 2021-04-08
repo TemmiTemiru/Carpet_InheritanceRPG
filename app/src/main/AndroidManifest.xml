@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mcm.edu.ph.carpet_inheritancerpg">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Carpet_InheritanceRPG">
+        <activity android:name=".tieflingInfo"></activity>
+        <activity android:name=".orcInfoBarb" />
+        <activity android:name=".firbolgInfoC" />
+        <activity android:name=".elfInfoBard" />
+        <activity android:name=".watermon" />
+        <activity android:name=".rockmon" />
+        <activity android:name=".icemon" />
+        <activity android:name=".firemon" />
+        <activity android:name=".electromon" />
+        <activity android:name=".tieflingSelect" />
+        <activity android:name=".orcSelect" />
+        <activity android:name=".firbolgSelect" />
+        <activity android:name=".elfSelect" />
+        <activity android:name=".monsterSelect" />
+        <activity android:name=".heroSelect" />
+        <activity android:name=".CharacterSelect" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

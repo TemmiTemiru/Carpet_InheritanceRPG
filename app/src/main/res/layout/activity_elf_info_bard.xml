@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".elfInfoBard">
+
+    <TextView
+        android:id="@+id/txtElf"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="ELF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ImageView
+        android:id="@+id/picElf"
+        android:layout_width="355dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtElf"
+        app:srcCompat="@drawable/elf" />
+
+    <TextView
+        android:id="@+id/txtElfLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/undertale"
+        android:text="Level 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picElf" />
+
+    <TextView
+        android:id="@+id/txtElfHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:fontFamily="@font/undertale"
+        android:text="HP:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtElfType"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtElfType" />
+
+    <TextView
+        android:id="@+id/txtElfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/undertale"
+        android:text="Type:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtElfLevel" />
+
+    <TextView
+        android:id="@+id/txtElfATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="ATK:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewElfATK"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewElfHP"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/txtViewElfHP" />
+
+    <TextView
+        android:id="@+id/txtElfDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="DEF:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewElfDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewElfType"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="@+id/txtViewElfType" />
+
+    <Button
+        android:id="@+id/btnBAckElfW"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtElfLevel" />
+
+    <TextView
+        android:id="@+id/txtViewElfHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtElfHP"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="@+id/txtElfHP"
+        app:layout_constraintTop_toBottomOf="@+id/txtElfHP" />
+
+    <TextView
+        android:id="@+id/txtViewElfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="Bard"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewElfHP"
+        app:layout_constraintEnd_toEndOf="@+id/txtElfType"
+        app:layout_constraintStart_toStartOf="@+id/txtElfType"
+        app:layout_constraintTop_toTopOf="@+id/txtViewElfHP" />
+
+    <TextView
+        android:id="@+id/txtViewElfDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBAckElfW"
+        app:layout_constraintEnd_toEndOf="@+id/txtElfDEF"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/txtElfDEF" />
+
+    <TextView
+        android:id="@+id/txtViewElfATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewElfDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtElfATK"
+        app:layout_constraintStart_toStartOf="@+id/txtElfATK"
+        app:layout_constraintTop_toTopOf="@+id/txtViewElfDEF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

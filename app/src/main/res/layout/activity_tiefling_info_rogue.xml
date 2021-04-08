@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".tieflingInfo">
+
+    <TextView
+        android:id="@+id/txtTiefling"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="TIEFLING"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ImageView
+        android:id="@+id/picTiefling"
+        android:layout_width="355dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiefling"
+        app:srcCompat="@drawable/tiefling" />
+
+    <TextView
+        android:id="@+id/txtTiefLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/undertale"
+        android:text="Level 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picTiefling" />
+
+    <TextView
+        android:id="@+id/txtTiefHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="HP:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtTiefType"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTiefType" />
+
+    <TextView
+        android:id="@+id/txtTiefType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/undertale"
+        android:text="Type:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiefLevel" />
+
+    <TextView
+        android:id="@+id/txtTiefATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="ATK:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewTiefATK"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewTiefHP"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/txtViewTiefHP" />
+
+    <TextView
+        android:id="@+id/txtTiefDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="DEF:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewTiefDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewTiefType"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="@+id/txtViewTiefType" />
+
+    <Button
+        android:id="@+id/btnBackTief"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiefLevel" />
+
+    <TextView
+        android:id="@+id/txtViewTiefHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTiefHP"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/txtTiefHP"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiefHP" />
+
+    <TextView
+        android:id="@+id/txtViewTiefType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="Rogue"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewTiefHP"
+        app:layout_constraintEnd_toEndOf="@+id/txtTiefType"
+        app:layout_constraintStart_toStartOf="@+id/txtTiefType"
+        app:layout_constraintTop_toTopOf="@+id/txtViewTiefHP" />
+
+    <TextView
+        android:id="@+id/txtViewTiefDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackTief"
+        app:layout_constraintEnd_toEndOf="@+id/txtTiefDEF"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/txtTiefDEF" />
+
+    <TextView
+        android:id="@+id/txtViewTiefATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewTiefDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtTiefATK"
+        app:layout_constraintStart_toStartOf="@+id/txtTiefATK"
+        app:layout_constraintTop_toTopOf="@+id/txtViewTiefDEF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

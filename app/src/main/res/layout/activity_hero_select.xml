@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".heroSelect">
+
+    <TextView
+        android:id="@+id/txtHeroSelect"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="HERO SELECT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/btnElf"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Elf"
+        android:textColor="#FF5F8D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeroSelect" />
+
+    <Button
+        android:id="@+id/btnFirbolg"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Firbolg"
+        android:textColor="#FFA21A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnElf"
+        app:layout_constraintStart_toStartOf="@+id/btnElf"
+        app:layout_constraintTop_toBottomOf="@+id/btnElf" />
+
+    <Button
+        android:id="@+id/btnOrc"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Orc"
+        android:textColor="#007755"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirbolg"
+        app:layout_constraintStart_toStartOf="@+id/btnFirbolg"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirbolg" />
+
+    <Button
+        android:id="@+id/btnTiefling"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Tiefling"
+        android:textColor="#27015C"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnOrc"
+        app:layout_constraintStart_toStartOf="@+id/btnOrc"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBackHero"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtHeroSelect"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTiefling"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

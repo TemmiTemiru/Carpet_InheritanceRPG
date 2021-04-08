@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".orcInfoBarb">
+
+    <TextView
+        android:id="@+id/txtOrc"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:fontFamily="@font/undertale"
+        android:text="ORC"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ImageView
+        android:id="@+id/picOrc"
+        android:layout_width="355dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrc"
+        app:srcCompat="@drawable/orc" />
+
+    <TextView
+        android:id="@+id/txtOrcLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/undertale"
+        android:text="Level 1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picOrc" />
+
+    <TextView
+        android:id="@+id/txtOrcHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="HP:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtOrcType"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtOrcType" />
+
+    <TextView
+        android:id="@+id/txtOrcType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/undertale"
+        android:text="Type:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrcLevel" />
+
+    <TextView
+        android:id="@+id/txtOrcATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="ATK:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewOrcATK"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewOrcHP"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/txtViewOrcHP" />
+
+    <TextView
+        android:id="@+id/txtOrcDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="DEF:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewOrcDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewOrcType"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="@+id/txtViewOrcType" />
+
+    <Button
+        android:id="@+id/btnBackOrc"
+        android:layout_width="87dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/undertale"
+        android:text="Back"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrcLevel" />
+
+    <TextView
+        android:id="@+id/txtViewOrcHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrcHP"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/txtOrcHP"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrcHP" />
+
+    <TextView
+        android:id="@+id/txtViewOrcType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="Barbarian"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewOrcHP"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrcType"
+        app:layout_constraintStart_toStartOf="@+id/txtOrcType"
+        app:layout_constraintTop_toTopOf="@+id/txtViewOrcHP" />
+
+    <TextView
+        android:id="@+id/txtViewOrcDEF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackOrc"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrcDEF"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/txtOrcDEF" />
+
+    <TextView
+        android:id="@+id/txtViewOrcATK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/undertale"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewOrcDEF"
+        app:layout_constraintEnd_toEndOf="@+id/txtOrcATK"
+        app:layout_constraintStart_toStartOf="@+id/txtOrcATK"
+        app:layout_constraintTop_toTopOf="@+id/txtViewOrcDEF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
